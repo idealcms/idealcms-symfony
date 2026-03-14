@@ -1,0 +1,23 @@
+{
+  "name": "idealcms/idealcms-symfony",
+  "description": "Ideal CMS на основе Symfony",
+  "type":"library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.4"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Ideal\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "Paul Nikitin",
+      "email": "top@neox.ru"
+    }
+  ]
+}
