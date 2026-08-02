@@ -1,0 +1,19 @@
+services:
+    _defaults:
+        autowire: true      # Автоматическое внедрение зависимостей
+        autoconfigure: true # Автоматическое применение интерфейсов/тегов
+        public: false       # По умолчанию сервисы приватные
+
+    # Регистрируем контроллер
+
+    IdealCms\DbRouting\Controller\:
+        resource: '../src/DbRouting/Controller/'
+        tags: ['controller.service_arguments']
+
+    IdealCms\DbRouting\Service\:
+        public: true
+        resource: '../src/DbRouting/Service'
+
+    IdealCms\Structure\:
+        public: true
+        resource: '../src/Structure/'
